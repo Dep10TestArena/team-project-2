@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="757.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.teachers.controller.TeacherViewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="15.0" layoutY="30.0" spacing="40.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <HBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <Button fx:id="btnNewTeacher" mnemonicParsing="false" onAction="#btnNewTeacherOnAction" prefHeight="49.0" prefWidth="181.0" text="+ New Teacher Detail">
+                     <HBox.margin>
+                        <Insets right="180.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="lblHeading" text="Manage Teachers" />
+               </children>
+               <opaqueInsets>
+                  <Insets top="30.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="128.0" text="ID : " />
+                  <TextField fx:id="txtID" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="128.0" text="Name : " />
+                  <TextField fx:id="txtName" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="128.0" text="Address : " />
+                  <TextField fx:id="txtAddress" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <Button fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="46.0" prefWidth="168.0" text="Save" />
+                  <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="47.0" prefWidth="166.0" text="Delete" />
+               </children>
+            </HBox>
+            <TableView fx:id="tblTeachers" prefHeight="355.0" prefWidth="664.0">
+              <columns>
+                <TableColumn prefWidth="114.0" text="ID" />
+                <TableColumn prefWidth="196.0" text="Name" />
+                  <TableColumn prefWidth="353.0" text="Address" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
