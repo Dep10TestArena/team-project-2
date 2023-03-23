@@ -1,4 +1,4 @@
-package lk.ijse.dep10.dashboard.controller;
+package lk.ijse.dep10.employee.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
