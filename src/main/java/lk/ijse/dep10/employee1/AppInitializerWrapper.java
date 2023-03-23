@@ -1,5 +1,5 @@
 
-package lk.ijse.dep10.teachers;
+package lk.ijse.dep10.employee1;
 
 
 public class AppInitializerWrapper {
