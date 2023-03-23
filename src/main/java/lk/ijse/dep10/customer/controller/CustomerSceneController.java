@@ -18,13 +18,19 @@ public class CustomerSceneController {
      public TextField txtName;
 
     public void initialize() {
+        loadCustomers();
+
         tblCustomers.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("id"));
         tblCustomers.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("name"));
         tblCustomers.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("address"));
 
     }
 
-     public void btnDeleteOnAction(ActionEvent event) {
+    private void loadCustomers() {
+
+    }
+
+    public void btnDeleteOnAction(ActionEvent event) {
 
     }
 
@@ -37,7 +43,13 @@ public class CustomerSceneController {
     }
 
     private void generateId() {
-
+        if (tblCustomers.getItems().isEmpty()) {
+            txtId.setText("C001");
+        } else {
+            String lastId = tblCustomers.getItems().get(tblCustomers.getItems().size() - 1).getId();
+            String newId = String.format("C03%s", (Integer.parseInt(lastId.substring(3)) + 1));
+            txtId.setText(newId);
+        }
     }
 
 
