@@ -1,15 +1,12 @@
-package lk.ijse.dep10.employee;
+package lk.ijse.dep10.employee1;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import lk.ijse.dep10.employee.db.DBConnection;
+import lk.ijse.dep10.employee1.db.DBConnection;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.sql.SQLException;
 
 public class AppInitializer extends Application {
