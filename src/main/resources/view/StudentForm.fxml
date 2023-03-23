@@ -24,19 +24,19 @@
             <HBox spacing="20.0">
                <children>
                   <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="109.0" text="Id: " />
-                  <TextField fx:id="txtId" prefHeight="24.0" prefWidth="383.0" />
+                  <TextField fx:id="txtId" prefHeight="24.0" prefWidth="383.0" promptText="Generated ID" />
                </children>
             </HBox>
             <HBox spacing="20.0">
                <children>
                   <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="109.0" text="Name :" />
-                  <TextField fx:id="txtName" prefHeight="24.0" prefWidth="383.0" />
+                  <TextField fx:id="txtName" prefHeight="24.0" prefWidth="383.0" promptText="Enter Your Name" />
                </children>
             </HBox>
             <HBox spacing="20.0">
                <children>
                   <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="109.0" text="Address :" />
-                  <TextField fx:id="txtAddress" prefHeight="24.0" prefWidth="383.0" />
+                  <TextField fx:id="txtAddress" prefHeight="24.0" prefWidth="383.0" promptText="Enter Your Address" />
                </children>
             </HBox>
          </children>
